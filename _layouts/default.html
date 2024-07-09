@@ -17,7 +17,8 @@
       {{ content }}
       {% include after-content.html %}
     </div>
-  <script src="https://utteranc.es/client.js"
+    {% if page.layout == "post" %}
+    <script src="https://utteranc.es/client.js"
         repo="kim5ri/kim5ri.github.io"
         issue-term="pathname"
         theme="github-light"
