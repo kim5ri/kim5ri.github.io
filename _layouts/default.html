@@ -17,6 +17,7 @@
       {{ content }}
       {% include after-content.html %}
     </div>
+    
     {% if page.layout == "post" %}
     <script src="https://utteranc.es/client.js"
         repo="kim5ri/kim5ri.github.io"
@@ -25,6 +26,7 @@
         crossorigin="anonymous"
         async>
     </script>
+    {% endif %}
     
     {% if site.search == true %}
       <div class="search-content">
